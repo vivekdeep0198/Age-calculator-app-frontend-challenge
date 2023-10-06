@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+
+:root {
+        --Purple: hsl(259, 100%, 65%);
+        --Light-red: hsl(0, 100%, 67%);
+        --White: hsl(0, 0%, 100%);
+        --Off-white: hsl(0, 0%, 94%);
+        --Light-grey: hsl(0, 0%, 86%);
+        --Smokey-grey: hsl(0, 1%, 44%);
+        --Off-black: hsl(0, 0%, 8%);
+}
+body{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color:  hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  padding: 7rem;
+  border-radius: 3rem;
+  max-width: 372px;
+  border-bottom-right-radius: 30%;
+  max-height: 425px;
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  margin: 4px 2px;
+  justify-content: center;
+  gap: 1rem;
+}
+.form-group{
+  font-size: large;
+  color:  hsl(0, 1%, 44%);
+  letter-spacing: 3px;
+}
+.form-group input{
+  width: 80%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border: 1px solid var(--Light-grey) ;
+}
+hr {
+  border: none;
+    height: 2px;
+    background-color: var(--Light-grey);
+    width: 478px;
+    margin: -25px;
+    margin-bottom: auto;
+}
+span .error{
+  display: inline-block;
+  color: hsl(0, 100%, 67%);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.btn {
+  margin: auto;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 55%;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 1.1rem 1.1rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+  margin-right: 0rem;
+}
+.btn img{
+  width: 28px;
+}
+.btn:hover{
+  background-color: hsl(0,100%,67%);
+}
+.result{
+  font-weight: 800;
+  line-height: 1;
+  font-size: 2rem;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.result span{
+  color: hsl(259, 100%, 65%);
+  
+}
+.confetti{
+  display: block;
+  margin: 0;
+  border: 1px solid #ddd;
+  user-select: none;
+}
+.can{
+  display: none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: -1;
+  overflow:hidden;
+  
+}
+@media screen and(max-width:400px){
+  .card-container{
+    max-width: 300px;
+  }
+  .result{
+    font-size:1.3rem;
+  }
+  .form-group input{
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .form-group span error{
+    font-size:0.5rem;
+    margin-top: 0.2rem;
+    width:100%;
+  }
+}
